@@ -1,0 +1,98 @@
+
+
+
+1.What is sql
+
+ANS:SQL stands for Structured Query Language is a domain specific programming language for managing the data in Database Management Systems.
+
+2.what is relational database
+
+3.what is datatype? how we can define?
+
+4.which datatype is used to define both numeric String  format?
+
+5. true/false: Is SQL is Casesentive language.::  ans false
+
+6. what is diff between nchar and nvarchar data type? or diff between char or varchar?
+
+7.in sql how to terminate the sql statement?
+
+8. which statement are used in dml ?
+
+9.which symbol are used to show complete record from the table?
+
+
+10.Write a query find number of employees whose DOB is between 02/05/1970 to 31/12/1975
+
+
+11.Write a query to fetch all the records from the EmployeeInfo table ordered by EmpLname in descending order and Department in the ascending order.
+
+ANS:select * from doj order by name asc, doj desc
+
+
+12. Write a query to display the first and the last record from the EmployeeInfo table.
+
+ANS:select *  from doj  where id=(select max(id) as lastid from doj)
+
+    select * from doj where id=(select min(id) as firstid from doj)
+
+
+13.Write a query to fetch 50% records from the EmployeeInfo table.
+
+ANS: select * from doj where id<=(select count(id)/2 as new from doj);
+
+
+
+14.SQL query to fetch all the employees who are not working on any department.
+
+ANS::select * from emp where dept is null
+
+
+15.. Write an SQL query to fetch all the Employees details from EmployeeDetails table who joined in the Year 2020.
+
+Ans::SELECT * FROM EmployeeDetails 
+WHERE YEAR(DateOfJoining) = '2020';
+
+
+
+16.how to copy one table into another?   
+
+ 
+select * into e1 from emp 
+
+17. What is the WHERE clause in SQL?
+
+18.How to delete a column in SQL?
+To delete a column in SQL we will be using DROP COLUMN method:
+
+ALTER TABLE employees
+
+DROP COLUMN age;
+
+
+19.Increment the  5% of salary for thoes customer who have grater than 50000 salary 
+
+20.decrement the 20% of salary whoes age in between 20 to 25;
+
+
+21.check the follwing syntax is correct or not  if not then why?
+
+select * from employee where salary = NULL
+
+
+22.delete the all records without deleteing structure of table?
+delete  bank1 
+
+23.diff between drop and delete statement?
+
+
+24.what is trucate statement ?how to used it and  what is the syntax for truncate statement?
+
+=>- it similar to delete statement
+--It wont delete the structure of the table
+--In Truncate you can't delete the data Row-By-Row by specifying a condtion.
+
+--syntax : truncate table table_name 
+
+25.In count function NULL value can be considered?
+--NO, Null value is not considered in count function.

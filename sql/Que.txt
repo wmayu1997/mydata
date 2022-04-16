@@ -1,0 +1,16 @@
+Q. How to display employees whose salary between 15000 and 25000 without using between operators?
+
+Q. Display employees whose COMMISION_PCT is other than 0.10.
+
+Q. Delete employees from department Purchasing and salary less than 2500.
+
+Q. Display the list of employees having first name ‘David’ or ‘Diana’ without using 'LIKE'.
+
+Q. Display employees having salary less than 2400 and hiring year greater than 2005. 
+
+(Create table according to this, COL name-- EID, Name, dept, Salary, Hiring_date)
+
+Q Display department Wise total count of Employees.
+(Create 2 tables- Emp_details col Name- Id, Name, city  2nd table dept_details col name- dept, salary,id )
+
+(Dont Discuss Answers in group)
